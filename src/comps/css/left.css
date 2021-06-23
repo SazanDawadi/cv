@@ -1,0 +1,127 @@
+.home{
+    position: relative;
+}
+
+.home__container{
+    gap:3rem;
+}
+
+.home__data{
+    gap:.5rem;
+    text-align: center;
+}
+
+.home__img{
+    width:120px;
+    height: 120px;
+    border-radius:50% ;
+    object-fit: cover;
+    justify-self: center;
+    border: 1.5px solid rgba(211, 209, 209, 0.2); 
+    margin-bottom: var(--mb-1);
+    background-color: rgb(235, 233, 233);
+}
+
+.home__title{
+    font-size: var(--h1-font-size);
+}
+
+.home__profession{
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
+.home__address{
+    gap:1rem;
+}
+.home__information{
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+.home__icon{
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+.home__button-mobile{
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    color: var(--title-color);
+    padding: 1rem 2rem;
+    border-radius: .25rem;
+    transition: .3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+}
+
+.home__button-mobile:hover{
+    background-color: var(--text-color);
+    color: white;
+}
+
+body.dark-theme{
+    --title-color: #F2F2F2;
+    --text-color: #BFBFBF;
+    --text-color-light: #dfdede;
+    --container-color: #212121;
+    --container-color-alt: #181616;
+    --body-color: #2B2B2B;
+}
+
+
+
+.change-theme{
+    position: absolute;
+    right: 0;
+    top: 2.2rem;
+    display: flex;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.change-theme:hover{
+    color:var(--title-color);
+}
+
+.generate-pdf{
+    display: none;
+    position: absolute;
+    top: 2.2rem;
+    left: 0;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.generate-pdf:hover{
+    color: var(--title-color);
+
+}
+
+
+
+
+
+@media screen and (min-width: 968px){
+    .resume-left{
+        background-color: var(--container-color-alt);
+        padding: 0 1.5rem;
+    }
+
+    .generate-pdf{
+        display: inline-block;
+    }
+
+    .profile__description{
+        text-align: initial;
+    }
+    .home__container{
+        gap:1.5rem;
+    }
+    .home__button-mobile{
+        display: none;
+    }
+}

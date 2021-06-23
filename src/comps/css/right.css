@@ -1,0 +1,148 @@
+.experience__content{
+    display: flex;
+
+}
+
+.experience__time{
+    padding-right:1rem ;
+}
+
+.experience__rounder{
+    position:relative;
+    display: block;
+    width:16px;
+    height: 16px;
+    background-color: var(--text-color-light);
+    border-radius:50% ;
+    margin-top: .25rem;
+}
+
+.experience__line{
+    display: block;
+    width:2px;
+    height: 110%;
+    background-color: var(--text-color-light);
+    transform: translate(7px, 0);
+}
+
+.experience__data{
+    gap:.5rem;
+}
+
+.experience__title{
+    font-size: var(--title-color);
+}
+
+
+.experience__company{
+    font-size: var(--small-font-size);
+    color: var(--title-color);
+}
+
+
+.projects__title ,.projects__title a{
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--mb-1);
+    color: var(--title-color);
+}
+
+.github__icon{
+    font-size: 1.2rem;
+    margin-left: .5rem;
+    color: var(--text-color-light);
+    margin-bottom: -0.17rem;
+    transition: all 100ms ease;
+    display: none;
+}
+
+.github__icon:hover{
+    font-size: 1.4rem;
+}
+
+
+/* refrences */
+.references__content{
+    gap:.25rem;
+}
+
+.references__subtitle{
+    color:var(--text-color-light)
+}
+
+.references__contact{
+    font-size: var(--smalller-font-size);
+}
+.references__title{
+    font-size: var(--h3-font-size);
+}
+
+
+/* Languages */
+
+.languages__content{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.languages__content{
+    gap:0;
+}
+.languages__name{
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mb-3);
+    color: var(--text-color);
+}
+.languages__circle{
+    display: inline-block;
+    width:5px;
+    height:5px;
+    background-color: var(--text-color);
+    border-radius: 50%;
+    margin-right: .75rem;
+
+}
+
+/* Intrests */
+
+.interests__container{
+    grid-template-columns: repeat(3,1fr);
+    margin-top: var(--mb-2);
+}
+.intrests__name{
+    color: var(--text-color);
+}
+.interests__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.interest__icon{
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: .25rem;
+}
+.dumbbell{
+    font-size: 1.8rem;
+}
+
+
+
+
+@media screen and (min-width: 968px){
+    .resume-right{
+        padding: 0 1.5rem;
+    }
+    .references__container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .languages__content{
+        grid-template-columns: repeat(3, max-content);
+        column-gap: 3.5rem;
+    }
+    .interests__container{
+        grid-template-columns: repeat(4, max-content);
+        column-gap :3.5rem;
+    }
+}
