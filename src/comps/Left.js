@@ -60,7 +60,7 @@ export const Left = () => {
                     {darkTheme && <FiSun onClick = {() =>themeHandler(!darkTheme)} className = "change-theme" />}
                     {!darkTheme &&<IoMoonOutline onClick = {() =>themeHandler(!darkTheme)} className = "change-theme" />}
 
-                    <BsDownload className = "generate-pdf" title = "Generate PDF" id = "resume-button"/>
+                    <a download = "" href = {cv}><BsDownload className = "generate-pdf"  title = "Download PDF" id = "resume-button"/></a>
 
                 </section>
                 <Social />
