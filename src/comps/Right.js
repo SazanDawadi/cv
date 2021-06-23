@@ -22,7 +22,7 @@ const Right = () => {
                         
                         <div className = "experience__data bd-grid">
                             <h3 className = "experience__title"> Freelance Web Developer</h3>
-                            <span className = "experience__company">From 2019 to present | Fiveer </span>
+                            <span className = "experience__company">From 2019 to 2020 | Fiveer </span>
                             <p className = "experience__description">Working as a freelancer i had a lot of responsibilty in my head. So this gave me first hand experience of marketing, communication and development driven with direct client feedback.</p>
                             
                         </div> 
