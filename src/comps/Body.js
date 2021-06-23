@@ -11,7 +11,7 @@ const Body = () => {
                 <Nav />
             </header>
             <main >
-                <div className = " l-main bd-container resume" id ="area-cv">
+                <div className = " l-main bd-container resume" id ="body">
                     <Left />
                     <Right />
                     

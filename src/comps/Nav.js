@@ -21,12 +21,12 @@ const Nav = () => {
     }
     return (
         <nav className = "nav bd-container">
-            <a href = "#header" className ="nav__logo" >Sajan</a>
+            <a href = "#body" className ="nav__logo" >Sajan</a>
 
             {showMenu && (<div className = "nav__menu" id = "nav-menu">
                 <ul className = "nav__list">
                     <li className = "nav__item" onClick ={() => handelClick(0)}>
-                        <a href = "#Home" className = {activeLink ===0?"nav__link active-link":"nav__link"}>
+                        <a href = "#body" className = {activeLink ===0?"nav__link active-link":"nav__link"}>
                             <BiHomeAlt className = "nav__icon" />Home
                         </a>
                     </li>
